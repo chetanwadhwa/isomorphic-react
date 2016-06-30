@@ -1,28 +1,18 @@
 /** @jsx React.DOM */
 
-var React = require('react/addons');
-
-/* create factory with griddle component */
-var Griddle = React.createFactory(require('griddle-react'));
-
-var fakeData = require('../data/fakeData.js').fakeData;
-var columnMeta = require('../data/columnMeta.js').columnMeta;
+var React = require('react');
 var resultsPerPage = 200;
 
 var ReactApp = React.createClass({
 
-      componentDidMount: function () {
-        console.log(fakeData);
-
+      componentWillMount: function () {
+        console.log('hell');
       },
       render: function () {
         return (
           <div id="table-area">
 
-             <Griddle results={fakeData}
-                      columnMetadata={columnMeta}
-                      resultsPerPage={resultsPerPage}
-                      tableClassName="table"/>
+              Helllooooooo
 
           </div>
         )
